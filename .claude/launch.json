@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rj-cross-rio-de-janeiro",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5510",
+        "-d",
+        "C:/Users/Enzo/Desktop/modelos-vivencie/rj-cross-rio-de-janeiro"
+      ],
+      "port": 5510
+    }
+  ]
+}
