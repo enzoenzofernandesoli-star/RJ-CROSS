@@ -29,7 +29,7 @@ foto de ambiente, luz baixa e quente, sem gente posando para a câmera.
 > Fotografia realista, lente 24mm, alto contraste, sem pessoas, sem texto.
 > Proporção 16:9.
 
-Depois de salvar, troque no `index.html` o `src` da capa de `fotos/foto-01.jpg`
+Depois de salvar, troque no `index.html` o `src` da capa de `fotos/foto-01.webp`
 para `fotos/hero.jpg` e ajuste o `alt`.
 
 ## 2. `fotos/treino-01.jpg`, `treino-02.jpg`, `treino-03.jpg` — cartões do treino
@@ -50,6 +50,6 @@ Em todas: sem pessoas, sem texto, fundo em azul-petróleo e preto, um respiro de
 
 ## O que já existe e pode ficar
 
-- `fotos/foto-01.jpg` — estrutura e argolas, foto real da ficha do Google. Serve de fallback.
-- `fotos/foto-02.jpg` — a turma na frente do mural. É foto real e boa, mas mostra rosto
-  de aluno: só publicar com autorização do dono.
+- `fotos/foto-01.webp` — estrutura e argolas, foto real da ficha do Google. Serve de fallback.
+- `fotos/foto-mural.webp` — recorte da parte superior do mural, sem rostos. A foto integral mostrava rostos
+  de alunos e não foi incluída no modelo.

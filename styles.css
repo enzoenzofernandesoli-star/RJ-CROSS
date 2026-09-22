@@ -548,3 +548,24 @@ p { text-wrap: pretty; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.001ms !important; }
 }
+
+
+/* Próximo passo claro após o conteúdo e contato legível no celular. */
+.link-pos-secao {
+  display: inline-flex; margin-top: 30px; padding-bottom: 5px;
+  color: var(--fogo); text-decoration: none; font-weight: 700;
+  border-bottom: 2px solid currentColor;
+}
+.link-pos-secao:hover { opacity: .75; }
+.flutuante span { display: none; }
+@media (max-width: 640px) {
+  .flutuante {
+    width: auto; height: 54px; right: 16px; bottom: 16px;
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 0 18px; border-radius: 999px;
+    text-decoration: none; font-size: 13px; font-weight: 700;
+  }
+  .flutuante svg { width: 20px; height: 20px; }
+  .flutuante span { display: inline; }
+  .rodape { padding-bottom: 110px; }
+}

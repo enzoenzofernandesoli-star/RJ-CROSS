@@ -14,7 +14,7 @@ const rotaMaps = negocio.maps ||
   )}`;
 
 const conversa = `${negocio.whatsapp}?text=${encodeURIComponent(
-  `Oi! Vi o site de vocês e queria saber da aula experimental do ${negocio.nome}.`
+  `Oi! Vi o site de vocês e queria saber dos horários e condições das aulas do ${negocio.nome}.`
 )}`;
 
 // Chamada de novo depois que as listas são montadas: cartão criado por
@@ -48,7 +48,7 @@ if (listaServicos) {
     <article class="cartao">
       <h3>${servico.nome}</h3>
       <p>${servico.texto}</p>
-      <a class="cartao-acao" data-acao href="">Agendar</a>
+      <a class="cartao-acao" data-acao href="">Perguntar no WhatsApp</a>
     </article>
   `).join('');
 }
@@ -73,12 +73,14 @@ const menuCelular = document.querySelector('.navegacao-celular');
 
 const fecharMenu = () => {
   botaoMenu.setAttribute('aria-expanded', 'false');
+  botaoMenu.querySelector('.sr').textContent = 'Abrir menu';
   menuCelular.hidden = true;
 };
 
 botaoMenu?.addEventListener('click', () => {
   const aberto = botaoMenu.getAttribute('aria-expanded') === 'true';
   botaoMenu.setAttribute('aria-expanded', String(!aberto));
+  botaoMenu.querySelector('.sr').textContent = aberto ? 'Abrir menu' : 'Fechar menu';
   menuCelular.hidden = aberto;
 });
 

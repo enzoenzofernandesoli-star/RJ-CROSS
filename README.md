@@ -9,3 +9,9 @@ Página única, estática, sem build. Abrir `index.html` por um servidor local.
 - Fotos: `fotos/` (coletadas da ficha pública do Google Maps)
 
 Conteúdo marcado como `[CONFIRMAR]` ainda não foi validado com o estabelecimento.
+
+## Revisão de 22/09/2026
+
+Fotos em WebP, recorte do mural sem rostos, promessas de aula gratuita removidas e CTA mobile legível.
+
+Horários, preços, condições da primeira visita e detalhes dos serviços dependem de confirmação do estabelecimento antes de divulgação como fato.

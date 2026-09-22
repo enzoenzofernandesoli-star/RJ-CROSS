@@ -29,8 +29,8 @@ Gerado do Prospector em 2026-09-22. Fonte: ficha do Google Maps já coletada.
 Regra: a cor real do negócio (logo, Instagram, foto do espaço) vence o acento de partida.
 
 ## Fotos baixadas
-- fotos/foto-01.jpg
-- fotos/foto-02.jpg
+- fotos/foto-01.webp
+- fotos/foto-mural.webp (recorte sem rostos)
 
 ## Falta confirmar
 - Horário de funcionamento

@@ -15,22 +15,22 @@ export const negocio = {
   "nota": "5.0",
   "avaliacoes": 49,
   "fotos": [
-    "foto-01.jpg",
-    "foto-02.jpg"
+    "foto-01.webp",
+    "foto-mural.webp"
   ],
   "horario": "[CONFIRMAR]",
   "servicos": [
     {
       "nome": "Cross training",
-      "texto": "Treino funcional em turma, com carga e movimento ajustados ao seu nível. Iniciante e avançado treinam na mesma aula, cada um no seu peso."
+      "texto": "Consulte a equipe sobre formato das turmas, níveis atendidos e adaptação dos movimentos."
     },
     {
-      "nome": "Aula experimental",
-      "texto": "Primeira aula sem custo. Você treina junto com a turma, conhece o espaço e decide depois."
+      "nome": "Primeira visita",
+      "texto": "Pergunte pelos horários disponíveis, valores e condições para conhecer o box."
     },
     {
-      "nome": "Acompanhamento de perto",
-      "texto": "Turma com técnico presente o tempo inteiro, corrigindo execução movimento a movimento."
+      "nome": "Acompanhamento",
+      "texto": "Confirme com a equipe como os treinos são conduzidos e acompanhados."
     }
   ],
   "chamada": "Cross training para todos os níveis",
