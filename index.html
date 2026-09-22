@@ -49,128 +49,126 @@
 
   <!-- ------------------------------------------------------------- capa -->
   <section class="capa">
-    <div class="capa-grade">
+    <figure class="capa-imagem">
+      <img src="fotos/foto-01.jpg"
+           alt="Estrutura de treino do RJ CROSS: barra fixa, argolas e a parede do box"
+           width="900" height="1200" fetchpriority="high" decoding="async">
+      <figcaption>O box, em Jardim Sulacap</figcaption>
+    </figure>
 
-      <div class="capa-texto">
-        <p class="sobrescrito">
-          <span class="ponto" aria-hidden="true"></span>
-          Jardim Sulacap · Zona Oeste · Rio de Janeiro
-        </p>
-        <h1 class="titulo-capa">
-          Cross training<br>
-          para todos<br>
-          <em>os níveis</em>
-        </h1>
-        <p class="linha-apoio">
-          Turma guiada do aquecimento ao último movimento. Quem nunca treinou e quem treina
-          há anos fazem a mesma aula — o que muda é a carga, não o acompanhamento.
-        </p>
-        <div class="capa-acoes">
-          <a class="botao botao-grande" data-acao href="">Agendar aula experimental</a>
-          <a class="botao-vazado" data-rota href="" target="_blank" rel="noopener">Ver no mapa</a>
-        </div>
+    <div class="capa-conteudo">
+      <p class="sobrescrito">
+        <span class="ponto" aria-hidden="true"></span>
+        Jardim Sulacap · Zona Oeste · Rio de Janeiro
+      </p>
+      <h1 class="titulo-capa">
+        Cross training<br>
+        para todos<br>
+        <em>os níveis</em>
+      </h1>
+      <p class="linha-apoio">
+        Turma guiada do aquecimento ao último movimento. Quem nunca treinou e quem treina
+        há anos fazem a mesma aula — o que muda é a carga, não o acompanhamento.
+      </p>
+      <div class="capa-acoes">
+        <a class="botao botao-grande" data-acao href="">Agendar aula experimental</a>
+        <a class="botao-vazado" data-rota href="" target="_blank" rel="noopener">Ver no mapa</a>
       </div>
-
-      <figure class="capa-foto">
-        <img src="fotos/foto-01.jpg" alt="Estrutura de treino do RJ CROSS: barra fixa, argolas e parede do box" width="900" height="1200" fetchpriority="high" decoding="async">
-        <figcaption>O box, em Jardim Sulacap</figcaption>
-      </figure>
-
     </div>
 
-    <!-- Régua de dados: tudo aqui é número público, nada inventado. -->
-    <dl class="regua">
-      <div>
-        <dt>Nota no Google</dt>
-        <dd><strong data-nota>—</strong><span class="regua-estrelas" aria-hidden="true">★★★★★</span></dd>
-      </div>
-      <div>
-        <dt>Avaliações</dt>
-        <dd><strong data-avaliacoes>—</strong></dd>
-      </div>
-      <div>
-        <dt>Modalidade</dt>
-        <dd><strong>Cross training</strong></dd>
-      </div>
-      <div>
-        <dt>Bairro</dt>
-        <dd><strong data-bairro>—</strong></dd>
-      </div>
-    </dl>
+    <p class="capa-selo">
+      <strong data-nota>—</strong>
+      <span class="capa-selo-estrelas" aria-hidden="true">★★★★★</span>
+      <small><span data-avaliacoes>—</span> avaliações</small>
+    </p>
   </section>
+
+  <!-- Régua de dados: tudo aqui é número público, nada inventado. -->
+  <dl class="regua">
+    <div>
+      <dt>Nota no Google</dt>
+      <dd><strong data-nota>—</strong><span class="regua-estrelas" aria-hidden="true">★★★★★</span></dd>
+    </div>
+    <div>
+      <dt>Avaliações</dt>
+      <dd><strong data-avaliacoes>—</strong></dd>
+    </div>
+    <div>
+      <dt>Modalidade</dt>
+      <dd><strong>Cross training</strong></dd>
+    </div>
+    <div>
+      <dt>Bairro</dt>
+      <dd><strong data-bairro>—</strong></dd>
+    </div>
+  </dl>
 
   <!-- ------------------------------------------------------------ prova -->
   <section class="prova" id="prova">
-    <div class="prova-caixa">
-      <p class="prova-nota"><span data-nota>—</span></p>
-      <p class="prova-rotulo">de nota no Google</p>
-    </div>
-    <div class="prova-texto">
-      <h2>Nenhuma avaliação<br>abaixo de cinco estrelas.</h2>
-      <p>
-        São <strong data-avaliacoes>—</strong> avaliações públicas de quem treina aqui, e a média
-        continua cheia. Isso não se escreve e não se compra: acumula aula por aula, aluno por aluno.
-      </p>
-      <a class="link-seta" data-maps href="" target="_blank" rel="noopener">Ler as avaliações no Google</a>
+    <div class="prova-interno">
+      <p class="prova-numero" data-nota>—</p>
+      <div class="prova-texto">
+        <h2>Nenhuma avaliação abaixo de cinco estrelas.</h2>
+        <p>
+          São <strong data-avaliacoes>—</strong> avaliações públicas de quem treina aqui,
+          e a média continua cheia. Isso não se escreve e não se compra: acumula aula
+          por aula, aluno por aluno.
+        </p>
+        <a class="link-seta" data-maps href="" target="_blank" rel="noopener">Ler no Google</a>
+      </div>
     </div>
   </section>
 
   <!-- ----------------------------------------------------------- treino -->
-  <section class="secao treino" id="treino">
-    <header class="cabecalho">
+  <section class="treino" id="treino">
+    <header class="cabecalho cabecalho-largo">
       <p class="sobrescrito"><span class="ponto" aria-hidden="true"></span> O treino</p>
       <h2>Mesma aula.<br>Cargas diferentes.</h2>
       <p class="apoio">
-        Não existe turma de iniciante separada da turma de avançado. Existe o treino do dia,
-        e a versão dele que cabe em você hoje.
+        Não existe turma de iniciante separada da turma de avançado. Existe o treino
+        do dia, e a versão dele que cabe em você hoje.
       </p>
     </header>
     <div class="cartoes" data-lista-servicos></div>
-    <p class="fecho">
-      <a class="botao" data-acao href="">Quero experimentar uma aula</a>
-    </p>
+  </section>
+
+  <!-- ------------------------------------------------- faixa do espaço -->
+  <section class="faixa-espaco" id="espaco" aria-label="O espaço">
+    <div class="faixa-espaco-fotos" data-lista-fotos></div>
+    <div class="faixa-espaco-texto">
+      <h2>Ferro, barra e argola.<br>O resto é conversa.</h2>
+      <a class="botao" data-acao href="">Conhecer o box</a>
+    </div>
   </section>
 
   <!-- --------------------------------------------------- primeira aula -->
-  <section class="secao primeira" id="primeira">
-    <header class="cabecalho">
-      <p class="sobrescrito"><span class="ponto" aria-hidden="true"></span> Como funciona</p>
-      <h2>Três passos até<br>a primeira aula.</h2>
+  <section class="primeira" id="primeira">
+    <header class="cabecalho cabecalho-largo">
+      <p class="sobrescrito"><span class="ponto" aria-hidden="true"></span> Primeira vez aqui</p>
+      <h2>Chega, treina, decide depois.</h2>
     </header>
-    <ol class="passos">
-      <li>
-        <span class="passo-numero" aria-hidden="true">01</span>
-        <h3>Você chama no WhatsApp</h3>
+    <div class="trilha">
+      <article>
+        <h3>Chama no WhatsApp</h3>
         <p>Diz que quer experimentar. A equipe responde qual horário tem vaga na semana.</p>
-      </li>
-      <li>
-        <span class="passo-numero" aria-hidden="true">02</span>
-        <h3>Chega quinze minutos antes</h3>
-        <p>Dá tempo de conhecer o espaço, tirar dúvida e avisar qualquer lesão ou limitação.</p>
-      </li>
-      <li>
-        <span class="passo-numero" aria-hidden="true">03</span>
-        <h3>Treina junto com a turma</h3>
+      </article>
+      <article>
+        <h3>Chega antes</h3>
+        <p>Quinze minutos bastam para conhecer o espaço e avisar qualquer lesão ou limitação.</p>
+      </article>
+      <article>
+        <h3>Treina com a turma</h3>
         <p>Aula inteira, do aquecimento ao final, no seu peso. Sem custo e sem matrícula na porta.</p>
-      </li>
-    </ol>
+      </article>
+    </div>
     <aside class="aviso-confirmar">
       <strong>A confirmar com a equipe:</strong> grade de horários das turmas, planos e valores.
       Esses dados ainda não foram validados com o estabelecimento — entram no site assim que forem.
     </aside>
   </section>
 
-  <!-- ----------------------------------------------------------- espaço -->
-  <section class="secao espaco" id="espaco">
-    <header class="cabecalho">
-      <p class="sobrescrito"><span class="ponto" aria-hidden="true"></span> O espaço</p>
-      <h2>Estrutura montada<br>para treino de verdade.</h2>
-    </header>
-    <div class="galeria" data-lista-fotos></div>
-  </section>
-
   <!-- ----------------------------------------------------------- visita -->
-  <section class="secao visita" id="visita">
+  <section class="visita" id="visita">
     <div class="visita-coluna">
       <header class="cabecalho">
         <p class="sobrescrito"><span class="ponto" aria-hidden="true"></span> Onde fica</p>

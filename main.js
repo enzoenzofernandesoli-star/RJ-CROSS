@@ -17,12 +17,17 @@ const conversa = `${negocio.whatsapp}?text=${encodeURIComponent(
   `Oi! Vi o site de vocês e queria saber da aula experimental do ${negocio.nome}.`
 )}`;
 
-document.querySelectorAll('[data-acao]').forEach((no) => {
-  no.href = conversa;
-  no.target = '_blank';
-  no.rel = 'noopener';
-});
-document.querySelectorAll('[data-rota], [data-maps]').forEach((no) => { no.href = rotaMaps; });
+// Chamada de novo depois que as listas são montadas: cartão criado por
+// JavaScript também precisa do link.
+function ligarAcoes() {
+  document.querySelectorAll('[data-acao]').forEach((no) => {
+    no.href = conversa;
+    no.target = '_blank';
+    no.rel = 'noopener';
+  });
+  document.querySelectorAll('[data-rota], [data-maps]').forEach((no) => { no.href = rotaMaps; });
+}
+ligarAcoes();
 
 preencher('[data-endereco]', negocio.endereco || `${negocio.bairro}, ${negocio.cidade} — ${negocio.estado}`);
 preencher('[data-nota]', (negocio.nota || '').replace('.', ','));
@@ -39,11 +44,11 @@ document.querySelectorAll('[data-instagram]').forEach((no) => {
 
 const listaServicos = document.querySelector('[data-lista-servicos]');
 if (listaServicos) {
-  listaServicos.innerHTML = negocio.servicos.map((servico, i) => `
+  listaServicos.innerHTML = negocio.servicos.map((servico) => `
     <article class="cartao">
-      <span class="cartao-indice">${String(i + 1).padStart(2, '0')}</span>
       <h3>${servico.nome}</h3>
       <p>${servico.texto}</p>
+      <a class="cartao-acao" data-acao href="">Agendar</a>
     </article>
   `).join('');
 }
@@ -58,6 +63,8 @@ if (listaFotos) {
       `).join('')
     : '<p class="galeria-vazia">As fotos do espaço entram aqui assim que o estabelecimento enviar.</p>';
 }
+
+ligarAcoes();
 
 /* ------------------------------------------------------- menu do celular */
 
